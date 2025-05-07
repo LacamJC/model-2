@@ -20,4 +20,12 @@
             font-size: 1.2rem;
         }
     }
+
+    .bg_right_image{
+        // width: 200px;
+
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
 }

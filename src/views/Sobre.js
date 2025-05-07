@@ -3,7 +3,7 @@ import styles from '../assets/scss/sobre/index.module.css'
 const Sobre = () => {
     return (
         <>
-            <div className={`${styles.main} container row mx-auto`}>
+            <div className={`${styles.main} container row mx-auto`} id='services'>
                 <div className="col col-md-6 col-12 d-flex justify-content-center align-items-center flex-column">
                     <div className="">
                         <h2 className={`${styles.title}`}>O que podemos fazer por você ?</h2>
@@ -21,7 +21,7 @@ const Sobre = () => {
                     </div>
                 </div>
                 <div className={`col col-md-6 col-12 d-flex justify-content-center align-items-center flex-column`}>
-                    <img src="https://placehold.co/500x500" />
+                    <img src="https://placehold.co/500x500" className={`${styles.bg_right_image}`} />
                 </div>
             </div>
         </>

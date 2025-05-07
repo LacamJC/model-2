@@ -7,7 +7,7 @@ const Main = () => {
                 <Header />
             </div>
 
-            <div className={`${styles.main} container row bg-sduccess mx-auto`}>
+            <div className={`${styles.main} container row bg-sduccess mx-auto`} id="home">
                 <div className="col col-md-6 col-12 d-flex justify-content-center align-items-center">
                     <div className={`${styles.content}`}>
                         <h1 className={`${styles.title}`}>

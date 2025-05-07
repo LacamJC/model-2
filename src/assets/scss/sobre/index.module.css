@@ -82,4 +82,9 @@
 }
 .main ul li {
   font-size: 1.2rem;
+}
+@media screen and (max-width: 500px) {
+  .main .bg_right_image {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.module.css.map */

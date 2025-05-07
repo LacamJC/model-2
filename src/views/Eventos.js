@@ -19,7 +19,7 @@ const Eventos = () => {
     ]
 
     return (
-        <div className={`${styles.main} `}>
+        <div className={`${styles.main} `} id='events'>
             <div className={`${styles.content} h-100 container d-flex flex-column justify-content-center align-items-center  `}>
                 <h1 className={`my-5`}>
                     Eventos
