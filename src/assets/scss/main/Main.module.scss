@@ -1,0 +1,54 @@
+@import "../variables";
+
+.main {
+    min-height: 90vh;
+
+    .content {
+        // background-color: red;
+
+        .title,
+        .subtitle {
+            font-family: $inter;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 60px;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: justify;
+            margin-bottom: 60px;
+            line-height: 2rem;
+        }
+
+        .btn {
+            background-color: $cor2; /* Substitua por sua cor bege */
+            padding: 10px 20px;
+            font-size: 1.4rem;
+            border-radius: 8px;
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: black;
+            border: 1px solid transparent;
+            transition:
+                background-color 0.3s ease,
+                border-color 0.3s ease;
+            cursor: pointer; /* Indica que é clicável */
+        }
+
+        .btn:hover {
+            background-color: darken($cor2, 10%);
+            border-color: black;
+        }
+
+        .btn:active {
+            background-color: darken($cor2, 20%);
+        }
+    }
+}

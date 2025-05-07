@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+$cor1 : #59372F;
+$cor2 : #ffe2d1;
+$cor3 : #fbf9f6;
+$cor4 : #292929;
+
+*{
+    font-family: roboto;
+}
+
+
+$time_animation : .5s;
+
+$roboto : "Roboto", sans-serif;
+$inter : "Inter", cursive;
+
+.titulo {
+    font-family: "Instrument Serif", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 2.5px;
+}
+
+@mixin box-shadow{
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.541);
+}
+
+.paragrafo {
+    font-size: 1.1rem;
+    font-family: $inter;
+    color: $cor4;
+    
+    text-align: justify;
+}
+
+@mixin paragrafo {
+    font-size: 1.1rem;
+    font-family: $inter;
+    color: $cor4;
+    
+    text-align: justify;
+}
+
+
+.button_bege{
+    background-color: $cor2;
+    color: $cor1;
+    border: none;
+    min-height: 50px;
+    min-width: 200px;
+    padding: 5px 20px ;
+    font-family: $inter;
+    border-radius: 5px;
+    transition: .5s ease all;
+    &:hover{
+        cursor: pointer;
+            background-color: $cor1;
+            color: $cor3;
+    }
+}
+
+@mixin button_bege{
+    background-color: $cor2;
+    color: $cor1;
+    border: none;
+    min-height: 50px;
+    min-width: 200px;
+    padding: 5px 20px ;
+    font-family: $inter;
+    border-radius: 5px;
+    transition: .5s ease all;
+    &:hover{
+        cursor: pointer;
+            background-color: $cor1;
+            color: $cor3;
+    }
+}
+
+
+.list__link{
+    list-style-position: inside;
+
+    .list_link{
+        margin: 10px 0px;
+        
+    }
+
+}
+
+
+.link{
+    font-style: italic;
+    color: $cor4;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .5s ease all;
+    &:hover{
+        // background-color: $cor1;
+        color: $cor1;
+        text-decoration: underline;
+
+    }
+}
+
+.subtitulo {
+    font-family: "Instrument Serif", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}

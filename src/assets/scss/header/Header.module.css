@@ -1,0 +1,64 @@
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5a3f35;
+  display: flex;
+  align-items: center;
+}
+.logo .logoImage {
+  width: 200px;
+  height: auto;
+  margin-right: 10px;
+}
+@media screen and (max-width: 380px) {
+  .logo .logoImage {
+    width: 100px;
+  }
+}
+
+.servicesButton {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .servicesButton {
+    display: inline-block;
+  }
+  .navbar-toggler-icon {
+    background-color: #5a3f35;
+  }
+  .navbar-collapse {
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+  .navbar-nav {
+    text-align: right;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+}
+@media (min-width: 993px) {
+  .navbar-collapse {
+    display: block !important;
+  }
+}/*# sourceMappingURL=Header.module.css.map */

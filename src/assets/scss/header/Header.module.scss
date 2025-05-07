@@ -1,0 +1,68 @@
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050; // acima da maioria dos elementos
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a3f35;
+    display: flex;
+    align-items: center;
+    .logoImage {
+        width: 200px;
+        @media screen and (max-width: 380px) {
+            width: 100px;
+        }
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.servicesButton {
+    display: none; // Inicialmente oculto em telas grandes
+}
+
+@media (max-width: 992px) {
+    .servicesButton {
+        display: inline-block;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #5a3f35;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        z-index: 999;
+    }
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 993px) {
+    .navbar-collapse {
+        display: block !important; // Menu expandido sempre em telas grandes
+    }
+}
