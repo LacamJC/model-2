@@ -70,6 +70,9 @@
 .main {
   min-height: 90vh;
 }
+.main .asideImage {
+  background-color: rgb(239, 239, 239);
+}
 .main .content .title,
 .main .content .subtitle {
   font-family: "Inter", cursive;

@@ -22,8 +22,8 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col col-md-6 col-12 bg-success">
-                    asd
+                <div className={`${styles.asideImage} col col-md-6 col-12 bg-sucess`}>
+                    
                 </div>
             </div>
         </>
